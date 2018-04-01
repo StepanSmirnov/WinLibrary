@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.name_tb = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.cancel_btn = new System.Windows.Forms.Button();
+            this.confirm_tb = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.submit_btn = new System.Windows.Forms.Button();
+            this.password_tb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.login_tb = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // textBox4
+            // name_tb
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(213, 31);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(279, 29);
-            this.textBox4.TabIndex = 16;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.name_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name_tb.Location = new System.Drawing.Point(213, 31);
+            this.name_tb.Name = "name_tb";
+            this.name_tb.Size = new System.Drawing.Size(279, 29);
+            this.name_tb.TabIndex = 16;
+            this.name_tb.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label4
             // 
@@ -59,26 +59,26 @@
             this.label4.TabIndex = 15;
             this.label4.Text = "ФИО";
             // 
-            // button2
+            // cancel_btn
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(256, 172);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(89, 31);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Отмена";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.cancel_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancel_btn.Location = new System.Drawing.Point(256, 172);
+            this.cancel_btn.Name = "cancel_btn";
+            this.cancel_btn.Size = new System.Drawing.Size(89, 31);
+            this.cancel_btn.TabIndex = 14;
+            this.cancel_btn.Text = "Отмена";
+            this.cancel_btn.UseVisualStyleBackColor = true;
+            this.cancel_btn.Click += new System.EventHandler(this.button2_Click);
             // 
-            // textBox3
+            // confirm_tb
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(213, 137);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.PasswordChar = '*';
-            this.textBox3.Size = new System.Drawing.Size(279, 29);
-            this.textBox3.TabIndex = 13;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.confirm_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirm_tb.Location = new System.Drawing.Point(213, 137);
+            this.confirm_tb.Name = "confirm_tb";
+            this.confirm_tb.PasswordChar = '*';
+            this.confirm_tb.Size = new System.Drawing.Size(279, 29);
+            this.confirm_tb.TabIndex = 13;
+            this.confirm_tb.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label3
             // 
@@ -90,26 +90,26 @@
             this.label3.TabIndex = 12;
             this.label3.Text = "Подтвердите пароль";
             // 
-            // button1
+            // submit_btn
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(351, 172);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(141, 31);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Подтвердить";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.submit_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.submit_btn.Location = new System.Drawing.Point(351, 172);
+            this.submit_btn.Name = "submit_btn";
+            this.submit_btn.Size = new System.Drawing.Size(141, 31);
+            this.submit_btn.TabIndex = 11;
+            this.submit_btn.Text = "Подтвердить";
+            this.submit_btn.UseVisualStyleBackColor = true;
+            this.submit_btn.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // password_tb
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(213, 103);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(279, 29);
-            this.textBox2.TabIndex = 10;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.password_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.password_tb.Location = new System.Drawing.Point(213, 103);
+            this.password_tb.Name = "password_tb";
+            this.password_tb.PasswordChar = '*';
+            this.password_tb.Size = new System.Drawing.Size(279, 29);
+            this.password_tb.TabIndex = 10;
+            this.password_tb.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label2
             // 
@@ -131,30 +131,30 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Логин";
             // 
-            // textBox1
+            // login_tb
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(213, 69);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(279, 29);
-            this.textBox1.TabIndex = 7;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.login_tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.login_tb.Location = new System.Drawing.Point(213, 69);
+            this.login_tb.Name = "login_tb";
+            this.login_tb.Size = new System.Drawing.Size(279, 29);
+            this.login_tb.TabIndex = 7;
+            this.login_tb.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(510, 224);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.name_tb);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.cancel_btn);
+            this.Controls.Add(this.confirm_tb);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.submit_btn);
+            this.Controls.Add(this.password_tb);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.login_tb);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "RegisterForm";
             this.Text = "Регистрация";
@@ -165,15 +165,15 @@
 
         #endregion
 
-        protected System.Windows.Forms.Button button1;
-        protected System.Windows.Forms.TextBox textBox2;
+        protected System.Windows.Forms.Button submit_btn;
+        protected System.Windows.Forms.TextBox password_tb;
         protected System.Windows.Forms.Label label2;
         protected System.Windows.Forms.Label label1;
-        protected System.Windows.Forms.TextBox textBox1;
-        protected System.Windows.Forms.TextBox textBox3;
+        protected System.Windows.Forms.TextBox login_tb;
+        protected System.Windows.Forms.TextBox confirm_tb;
         protected System.Windows.Forms.Label label3;
-        protected System.Windows.Forms.Button button2;
+        protected System.Windows.Forms.Button cancel_btn;
         protected System.Windows.Forms.Label label4;
-        protected System.Windows.Forms.TextBox textBox4;
+        protected System.Windows.Forms.TextBox name_tb;
     }
 }

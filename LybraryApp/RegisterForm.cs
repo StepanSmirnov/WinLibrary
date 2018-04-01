@@ -23,32 +23,32 @@ namespace LybraryApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "")
+            if (login_tb.Text == "")
             {
-                textBox1.BackColor = Color.Red;
+                login_tb.BackColor = Color.Red;
             }
 
-            if (textBox2.Text == "")
+            if (password_tb.Text == "")
             {
-                textBox2.BackColor = Color.Red;
+                password_tb.BackColor = Color.Red;
             }
 
-            if (textBox3.Text == "")
+            if (confirm_tb.Text == "")
             {
-                textBox3.BackColor = Color.Red;
+                confirm_tb.BackColor = Color.Red;
             }
 
-            if (textBox4.Text == "")
+            if (name_tb.Text == "")
             {
-                textBox4.BackColor = Color.Red;
+                name_tb.BackColor = Color.Red;
             }
 
-            if (textBox1.BackColor == Color.Green && textBox3.BackColor == Color.Green)
+            if (login_tb.BackColor == Color.Green && confirm_tb.BackColor == Color.Green)
             {
                 bibliotekaDataSet.СотрудникиRow row = ds.Сотрудники.NewСотрудникиRow();
-                row.ФИО_сотрудника = textBox4.Text;
-                row.Логин = textBox1.Text;
-                row.Пароль = textBox2.Text;
+                row.ФИО_сотрудника = name_tb.Text;
+                row.Логин = login_tb.Text;
+                row.Пароль = password_tb.Text;
                 ds.Сотрудники.Rows.Add(row);
                 adapter.Update(ds.Сотрудники);
                 MessageBox.Show("Вы зарегистрированы!");
@@ -66,30 +66,30 @@ namespace LybraryApp
             TextBox tb = sender as TextBox;
             if (tb.Text == "")
                 tb.BackColor = Color.Red;
-            if (textBox2.Text == textBox3.Text)
+            if (password_tb.Text == confirm_tb.Text)
             {
-                textBox3.BackColor = Color.Green;
-                textBox2.BackColor = Color.Green;
+                confirm_tb.BackColor = Color.Green;
+                password_tb.BackColor = Color.Green;
             }
             else
             {
-                textBox3.BackColor = Color.Red;
-                textBox2.BackColor = Color.Red;
+                confirm_tb.BackColor = Color.Red;
+                password_tb.BackColor = Color.Red;
             }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             var results = from myRow in ds.Сотрудники.AsEnumerable()
-                          where myRow.Field<string>("Логин") == textBox1.Text
+                          where myRow.Field<string>("Логин") == login_tb.Text
                           select myRow;
-            if (results.Count() > 0 || textBox1.Text == "")
+            if (results.Count() > 0 || login_tb.Text == "")
             {
-                textBox1.BackColor = Color.Red;
+                login_tb.BackColor = Color.Red;
             }
             else
             {
-                textBox1.BackColor = Color.Green;
+                login_tb.BackColor = Color.Green;
             }
         }
 

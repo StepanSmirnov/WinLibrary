@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace LybraryApp
 {
+    //Базовый класс для форм
     public partial class FormBase : Form
     {
         protected bibliotekaDataSet ds;
@@ -28,6 +29,7 @@ namespace LybraryApp
             previous = prev;
         }
 
+        //Перейти на форму и скрыть предыдущую
         public void Open()
         {
             if (previous == null) return;
@@ -35,6 +37,7 @@ namespace LybraryApp
             Show();
         }
 
+        //Перейти на предыдущую форму и скрыть текущую
         public void Back()
         {
             if (previous == null) return;
@@ -42,6 +45,7 @@ namespace LybraryApp
             Hide();
         }
 
+        //Вызывается при закрытии формы
         private void FormBase_FormClosed(object sender, FormClosedEventArgs e)
         {
             Back();

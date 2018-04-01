@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using LybraryApp.bibliotekaDataSetTableAdapters;
 namespace LybraryApp
 {
+    //Главная форма
     public partial class ViewForm : FormBase
     {
         private АвторыTableAdapter authors_adapter;
@@ -22,6 +23,8 @@ namespace LybraryApp
         public ViewForm(Form prev = null):base(prev)
         {
             InitializeComponent();
+
+            //Получение всех таблиц
             employees_adapter = new СотрудникиTableAdapter();
             books_adapter = new КнигиФондаTableAdapter();
             giving_adapter = new ВыдачаКнигTableAdapter();
@@ -42,6 +45,7 @@ namespace LybraryApp
             ListBox lb = sender as ListBox;
             int index = lb.SelectedIndex;
             if (index < 0) return;
+            //Выбор таблицы для отображения
             switch (index)
             {
                 case 0:
@@ -72,13 +76,14 @@ namespace LybraryApp
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Обновление данных в базе
             employees_adapter.Update(ds.Сотрудники);
             books_adapter.Update(ds.КнигиФонда);
             giving_adapter.Update(ds.ВыдачаКниг);
             authors_adapter.Update(ds.Авторы);
             devisions_adapter.Update(ds.РазделыКниг);
             kinds_adapter.Update(ds.ВидыКниг);
-
+            //Обновление данных в UI
             employees_adapter.Fill(ds.Сотрудники);
             books_adapter.Fill(ds.КнигиФонда);
             giving_adapter.Fill(ds.ВыдачаКниг);
